@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #E3F7FE;
+}
+body{
+    background-color: #E3F7FE;
+}
+
+header{
+    background-color: #0d0d0d;
+    padding: 1rem;
+}
+a:hover{
+    text-decoration: overline;
+    color: #E3F7FE;
+}
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #E3F7FE;
+}
+.logo {
+    max-width:85px;
+    float: left;
+    width: auto;
+    height: auto;
+}
+.link{
+    text-decoration: none;
+    color: #0d0d0d;
+}
+.link:hover{
+    text-decoration:underline;
+    color: #0d0d0d;
+}
+section{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 5.0rem;
+    padding: 4rem;
+    text-align: justify;
+}
+.foto{
+    float: left;
+    width: 150px;
+    margin-right: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #0d0d0d;
+}
+.icon{
+    width: 30px;
+}
+footer{
+    background-color: #0d0d0d;
+    color: #E3F7FE;
+    margin-top: 6.2rem;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.rodape{
+    position: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    h2{
+        font-size: xx-large;
+    }
+    
+    .icon{
+        width: 25px;
+    }
+    header{
+        padding: 1.8rem;
+    }
+    header img{
+        width: 80px;
+    }
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active  .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active  .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active  .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0d0d0d;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 15px 0;
+    }
+
+    .nav.active{
+        left: 0;
+    }
+
+    .foto{
+        width: 150px;
+    }
+
+    .mobilefooter{
+        position: fixed;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    h2{
+        font-size:medium;
+    }
+    header{
+        padding: 1.8rem;
+    }
+    header img{
+        width: 60px;
+    }
+    .foto{
+        width: 100px;
+    }
+    .icon{
+        width: 15px;
+    }
+    .mobilefooter{
+        position: fixed;
+    }
+    section{
+        margin-top: 7.5rem;
+        padding: 2rem;
+    }
+
+}
+
+
