@@ -1,62 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Curriculo</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <a href="/index.html"><img class="img-fluid float-start" src="/img/Cloud.png" width="100"></a>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link h3 disabled" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link h3 text-white" href="/sobreMim.html">Sobre Mim</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link h3 text-white" href="/contatos.html">Contato</a>
-            </li>
-        </ul>
-        <div class="hamburguer">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+    <header class="header">
+        <p class="logo">CLOUD</p>
+
+        <nav class="menu">
+            <a class="menu_item" href="#apresentacao">Home</a>
+            <a class="menu_item" href="#projetos">Projetos</a>
+            <a class="menu_item" href="#sobreMim">Sobre Mim</a>
+            <a class="menu_item" href="#contatos">Contatos</a>
+        </nav>
     </header>
 
-    <section class="container">
-        <img src="/img/foto.webp" class="foto">
+    <main class="main">
+        <section id="apresentacao" class="apresentacao">
+            <div class="apresentacao_texto">
+                <h1 class="apresentacao_titulo">
+                    Olá, eu sou o Cloud
+                </h1>
+                <h2 class="apresentacao_subtitulo">
+                    Precisa de um <strong>site</strong>? <br>
+                    Posso fazer para você!
+                </h2>
+            </div>
+            <img class="Cloud" src="/img/foto.webp" alt="foto cloud">
+        </section>
 
-        <h2>Olá, meu nome é João Vitor e sou programador javascript, estou evoluindo meus conhecimentos para me tornar fullstack 
-        em Javascript, conciliando o back end usando Node.js e o front end usando React.</h2><br>
-        
-        <h2>
-            Estou buscando novas oportunidades para aprofundar meus conhecimentos em javascript
-            a partir de novas experiências.
-        </h2>
-    </section>
-    <section class="container">
-        <h2>
-            Contatos:<br>
-        </h2>
-        <h2>
-            <i class="bi bi-whatsapp"><img class="icon" src="/img/whatsapp.svg">&nbsp;(19) 99193-4069</i><br>
-            <i class="bi bi-envelope"><img class="icon" src="/img/envelope.svg">&nbsp;&nbsp;jvhc3002@gmail.com</i><br>
-            <i class="bi bi-github"><img class="icon" src="/img/github.svg"><a  class="link" target="_blank" href="https://github.com/JooVitorSena">&nbsp;https://github.com/JooVitorSena</a></i><br>
-            <a class="link" href="contatos.html">Mais Contatos</a>
-        </h2>
-    </section>  
+        <section id="projetos" class="projetos">
 
+            <h3 class="projeto_titulo">Projetos que tenho experiência</h3>
+            <div class="cardparte1">
+                <div class="card">
+                    <div class="imagem_projeto">
+                        <img class="card1" src="/img/card1.png" alt="projeto 1">
+                    </div>
+                    <h3 class="card_titulo">Projeto 1</h3>
+                    <p class="card_texto">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Minima dignissimos animi beatae cupiditate sequi unde ipsum 
+                        officiis libero explicabo aspernatur quaerat aliquid fugit, 
+                        asperiores cumque ut culpa quod vitae natus?
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="imagem_projeto">
+                        <img class="card1" src="/img/card1.png" alt="projeto 2">
+                    </div>
+                    <h3 class="card_titulo">Projeto 2</h3>
+                    <p class="card_texto">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Minima dignissimos animi beatae cupiditate sequi unde ipsum 
+                        officiis libero explicabo aspernatur quaerat aliquid fugit, 
+                        asperiores cumque ut culpa quod vitae natus?
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="imagem_projeto">
+                        <img class="card1" src="/img/card1.png" alt="projeto 3">
+                    </div>
+                    <h3 class="card_titulo">Projeto 3</h3>
+                    <p class="card_texto">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Minima dignissimos animi beatae cupiditate sequi unde ipsum 
+                        officiis libero explicabo aspernatur quaerat aliquid fugit, 
+                        asperiores cumque ut culpa quod vitae natus?
+                    </p>
+                </div>
+            </div>
+            <div class="cardparte2">
+                <div class="card">
+                    <div class="imagem_projeto">
+                        <img class="card1" src="/img/card1.png" alt="projeto 4">
+                    </div>
+                    <h3 class="card_titulo">Projeto 4</h3>
+                    <p class="card_texto">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Minima dignissimos animi beatae cupiditate sequi unde ipsum 
+                        officiis libero explicabo aspernatur quaerat aliquid fugit, 
+                        asperiores cumque ut culpa quod vitae natus?
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="imagem_projeto">
+                        <img class="card1" src="/img/card1.png" alt="projeto 5">
+                    </div>
+                    <h3 class="card_titulo">Projeto 5</h3>
+                    <p  class="card_texto">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Minima dignissimos animi beatae cupiditate sequi unde ipsum 
+                        officiis libero explicabo aspernatur quaerat aliquid fugit, 
+                        asperiores cumque ut culpa quod vitae natus?
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="imagem_projeto">
+                        <img class="card1" src="/img/card1.png" alt="projeto 6">
+                    </div>
+                    <h3 class="card_titulo">Projeto 6</h3>
+                    <p  class="card_texto">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Minima dignissimos animi beatae cupiditate sequi unde ipsum 
+                        officiis libero explicabo aspernatur quaerat aliquid fugit, 
+                        asperiores cumque ut culpa quod vitae natus?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="sobreMim" class="SobreMim">
+            <div class="SobreMim_titulo_div">
+                <img src="/img/info-circle.svg" class="icon"><h3 class="SobreMim_titulo">Sobre mim:</h3><br>
+            </div>
+            <p class="SobreMim_texto">
+                Eu sou o Cloud, sou programador em java e javascript, 
+                estou evoluindo meus conhecimentos para me tornar fullstack em Javascript, 
+                conciliando o back end usando Node.js e o front-end usando React. 
+                Ainda estou em processo de aprendizado, porém evoluindo exponencialmente.
+                Em java estou aprendendo programação voltada para jogos, 
+                porém já tenho conhecimento suficiente para trabalhar em outros projetos.
+                Tenho experiência nas IDEs Visual Studio Code, IntelliJ, NetBeans, 
+                Sublime, Eclipse e Notepad++.
+            </p>
+        </section>
+        <section id="contatos" class="Contatos">
+            <h3 class="Contatos_titulo">Contatos:</h3>
+            <div class="contatostotal">
+                <div class="parte1contatos">
+                    <div class="contato1">
+                        <img src="/img/whatsapp.svg" class="icon">&nbsp;<a href="https://wa.me/5519991934069" target="_blank" class="link">(19) 99193-4069</a><br>
+                    </div>
+                    <div class="contato1">
+                        <img src="/img/envelope.svg" class="icon">&nbsp;&nbsp;<a href="mailto:cloudcryy@gmail.com" target="_blank" class="link">Cloud.cryy@gmail.com</a><br>
+                    </div>
+                </div>
+                <div class="parte2contatos">
+                    <div class="contato1">
+                        <img src="/img/github.svg" class="icon"><a  class="link" target="_blank" href="https://github.com/CloudCryyy">&nbsp;CloudCryyy</a><br>
+                    </div>
+                    <div class="contato1">
+                        <img src="/img/linkedin.svg" class="icon"><a class="link" href="https://www.linkedin.com/in/jo%C3%A3o-vitor-sena-barbosa-1639b5187" target="_blank">&nbsp;João Vitor Sena Barbosa</a>
+                    </div>   
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer>
-        @copyright 2022
+    <footer class="rodape">
+        <p class="logofooter">CLOUD</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

@@ -1,161 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@100;400&display=swap');
+
 *{
     margin: 0;
-    font-family: Arial;
     padding: 0;
     box-sizing: border-box;
-}
-a{
     text-decoration: none;
-    color: #E3F7FE;
 }
-body{
-    background-color: #E3F7FE;
+:root{
+    --header: 4rem;
 }
 
-header{
-    background-color: #0d0d0d;
-    padding: 1rem;
+body{
+    background: linear-gradient(0deg, #f0f0f0, #0d0d0d 50%);
 }
-a:hover{
-    text-decoration: overline;
-    color: #E3F7FE;
+
+.header{
+    background-color: rgba(13, 13, 13, 0.700);
+    color: rgba(240, 240, 240, 1);
+    height: var(--header);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;   
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
-.hamburguer{
-    display: none;
-    cursor: pointer;
+
+.logo{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
 }
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #E3F7FE;
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
 }
-.logo {
-    max-width:85px;
-    float: left;
-    width: auto;
-    height: auto;
+.menu_item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+.menu_item:hover{
+    text-decoration: underline;
+}
+/*FIM DO HEADER*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-around;
+    padding-top: var(--header);
+    align-items: center;
+}
+
+.apresentacao_texto{
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.apresentacao_titulo{
+    font-weight: 400;
+    font-size: xx-large;
+}
+.apresentacao_subtitulo{
+    font-weight: 100;
+    font-size: x-large;
+}
+.Cloud{
+    width: 20rem;
+}
+/*FIM DA APRESENTAÇÃO*/
+
+.projetos{
+    padding-top: var(--header);
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5rem;
+}
+.projeto_titulo{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #f0f0f0;
+    font-size: x-large;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    width: 22rem;
+}
+.card_titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #0d0d0d;
+}
+.card_texto{
+    background-color: rgba(13, 13, 13, 0.950);
+    font-weight: 100;
+    color: #f0f0f0;
+    padding: 1.5rem;
+    margin-top: 0.3rem;
+}
+.cardparte1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cardparte2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card1{
+    width: 15rem;
+}
+/*FIM DOS PROJETOS*/
+
+.SobreMim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #0d0d0d;
+    padding: var(--header) 0;
+}
+.SobreMim_titulo_div{
+    display: flex;
+    padding-bottom: 2rem;
+}
+.SobreMim_titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #0d0d0d;
+    font-size: x-large;
+}
+.icon{
+    width: 1.5rem;
+}
+.SobreMim_texto{
+    padding: 0 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+/*FIM PARTE SOBREMIM*/
+
+.Contatos{
+    border-top: 1px solid #0d0d0d;
+    padding: var(--header) 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Contatos_titulo{
+    padding-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    margin: 0 auto;
+}
+.contato1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #0d0d0d;
 }
 .link{
-    text-decoration: none;
     color: #0d0d0d;
 }
 .link:hover{
-    text-decoration:underline;
-    color: #0d0d0d;
+    text-decoration: underline;
 }
-section{
-    background-color: white;
-    border-radius: 20px;
-    margin-top: 5.0rem;
-    padding: 4rem;
-    text-align: justify;
+.contatostotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.foto{
-    float: left;
-    width: 150px;
-    margin-right: 1.2rem;
-    border-radius: 50%;
-    border: 1px solid #0d0d0d;
-}
-.icon{
-    width: 30px;
-}
-footer{
-    background-color: #0d0d0d;
-    color: #E3F7FE;
-    margin-top: 6.2rem;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
+/*FIM DA PARTE CONTATOS*/
+
 .rodape{
-    position: fixed;
+    border-top: 1px solid #0d0d0d;
+    display: flex;
+    justify-content: center;
 }
-
-@media screen and (max-width: 768px) {
-    h2{
-        font-size: xx-large;
-    }
-    
-    .icon{
-        width: 25px;
-    }
-    header{
-        padding: 1.8rem;
-    }
-    header img{
-        width: 80px;
-    }
-    .hamburguer{
-        display: block;
-    }
-    .hamburguer.active  .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburguer.active  .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburguer.active  .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #0d0d0d;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-item{
-        margin: 15px 0;
-    }
-
-    .nav.active{
-        left: 0;
-    }
-
-    .foto{
-        width: 150px;
-    }
-
-    .mobilefooter{
-        position: fixed;
-    }
-
+.logofooter{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
+    padding: 1rem 0;
 }
-
-@media screen and (max-width: 576px) {
-    h2{
-        font-size:medium;
-    }
-    header{
-        padding: 1.8rem;
-    }
-    header img{
-        width: 60px;
-    }
-    .foto{
-        width: 100px;
-    }
-    .icon{
-        width: 15px;
-    }
-    .mobilefooter{
-        position: fixed;
-    }
-    section{
-        margin-top: 7.5rem;
-        padding: 2rem;
-    }
-
-}
-
-
